@@ -21,6 +21,7 @@
 		A2398EB5177C9A4F0006940D /* WhereamiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2398EB4177C9A4F0006940D /* WhereamiViewController.m */; };
 		A2398EB8177C9A4F0006940D /* WhereamiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2398EB6177C9A4F0006940D /* WhereamiViewController.xib */; };
 		A2501AAA177E1A0A009AB272 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2501AA9177E1A0A009AB272 /* CoreLocation.framework */; };
+		A279A847179362A600E59021 /* WhereamiViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A279A846179362A600E59021 /* WhereamiViewController~ipad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		A2398EB4177C9A4F0006940D /* WhereamiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhereamiViewController.m; sourceTree = "<group>"; };
 		A2398EB7177C9A4F0006940D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/WhereamiViewController.xib; sourceTree = "<group>"; };
 		A2501AA9177E1A0A009AB272 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A279A846179362A600E59021 /* WhereamiViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WhereamiViewController~ipad.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				A2398EB3177C9A4F0006940D /* WhereamiViewController.h */,
 				A2398EB4177C9A4F0006940D /* WhereamiViewController.m */,
 				A2398EB6177C9A4F0006940D /* WhereamiViewController.xib */,
+				A279A846179362A600E59021 /* WhereamiViewController~ipad.xib */,
 				A216E4D0177E4A7900EBFC66 /* BNRMapPoint.h */,
 				A216E4D1177E4A7900EBFC66 /* BNRMapPoint.m */,
 				A2398EA2177C9A4F0006940D /* Supporting Files */,
@@ -173,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2398EA6177C9A4F0006940D /* InfoPlist.strings in Resources */,
+				A279A847179362A600E59021 /* WhereamiViewController~ipad.xib in Resources */,
 				A2398EAE177C9A4F0006940D /* Default.png in Resources */,
 				A2398EB0177C9A4F0006940D /* Default@2x.png in Resources */,
 				A2398EB2177C9A4F0006940D /* Default-568h@2x.png in Resources */,

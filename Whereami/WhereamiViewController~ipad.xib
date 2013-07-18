@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4471.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WhereamiViewController">
+            <connections>
+                <outlet property="activityIndicator" destination="zcU-0g-ZKn" id="orj-lk-j70"/>
+                <outlet property="locationTitleField" destination="EfK-Ot-beE" id="lBQ-NT-TdT"/>
+                <outlet property="segmentedControl" destination="NEv-WC-idA" id="FaT-qL-49F"/>
+                <outlet property="view" destination="IbF-af-3bi" id="Qbq-KR-axq"/>
+                <outlet property="worldView" destination="kZR-UE-0Cn" id="1mv-aS-IdL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IbF-af-3bi">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="kZR-UE-0Cn">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="psg-Gq-MdT"/>
+                    </connections>
+                </mapView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="EfK-Ot-beE">
+                    <rect key="frame" x="20" y="20" width="359" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="qSM-80-J70"/>
+                    </connections>
+                </textField>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="zcU-0g-ZKn">
+                    <rect key="frame" x="374" y="327" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                </activityIndicatorView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="NEv-WC-idA">
+                    <rect key="frame" x="588" y="20" width="160" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    <segments>
+                        <segment title="Std"/>
+                        <segment title="Sat"/>
+                        <segment title="Hybrid"/>
+                    </segments>
+                    <connections>
+                        <action selector="changeSegment:" destination="-1" eventType="valueChanged" id="Mr9-a5-8lL"/>
+                    </connections>
+                </segmentedControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+        </view>
+    </objects>
+</document>
